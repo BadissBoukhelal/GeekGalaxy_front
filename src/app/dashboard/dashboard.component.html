@@ -1,0 +1,37 @@
+<body>
+    <mat-card>
+        <b><span>Tableau de bord</span></b>
+    </mat-card>
+    <br>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <div class="container">
+                    <h2 class="title">Categories</h2>
+                    <h1 class="title">{{ data?.category }}</h1> 
+                    <p><button class="button" [routerLink]="['/multimedia/category']">Voir Categories</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <div class="container">
+                    <h2 class="title">Produits</h2>
+                    <h1 class="title">{{ data?.product }}</h1> 
+                    <p><button class="button" [routerLink]="['/multimedia/product']">Voir Produits</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <div class="container">
+                    <h2 class="title">Factures</h2>
+                    <h1 class="title">{{ data?.bill }}</h1> 
+                    <p><button class="button" [routerLink]="['/multimedia/bill']">Voir Factures</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
